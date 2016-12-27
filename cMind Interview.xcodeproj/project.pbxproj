@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B22BEC0D1E129C390069CCC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B22BEC091E129C390069CCC5 /* LaunchScreen.storyboard */; };
+		B22BEC0E1E129C390069CCC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B22BEC0B1E129C390069CCC5 /* Main.storyboard */; };
+		B22BEC111E129C610069CCC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22BEC101E129C610069CCC5 /* AppDelegate.swift */; };
+		B22BEC141E129D280069CCC5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22BEC131E129D280069CCC5 /* MainViewController.swift */; };
+		B22BEC191E129E160069CCC5 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22BEC181E129E160069CCC5 /* MainViewModel.swift */; };
+		B22BEC1C1E129ED10069CCC5 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22BEC1B1E129ED10069CCC5 /* UIViewController.swift */; };
+		B22BEC1E1E129EFF0069CCC5 /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22BEC1D1E129EFF0069CCC5 /* UIScrollView.swift */; };
+		B22BEC211E12A0000069CCC5 /* URLConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22BEC201E12A0000069CCC5 /* URLConstant.swift */; };
+		B22BEC241E12A30A0069CCC5 /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B22BEC221E12A30A0069CCC5 /* List.storyboard */; };
+		B22BEC281E12A3520069CCC5 /* ListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B22BEC271E12A3520069CCC5 /* ListCell.xib */; };
+		B22BEC2C1E12A3DE0069CCC5 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22BEC2B1E12A3DE0069CCC5 /* ListCell.swift */; };
+		B22BEC2E1E12A43E0069CCC5 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22BEC2D1E12A43E0069CCC5 /* UIView.swift */; };
+		B22BEC301E12A4670069CCC5 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22BEC2F1E12A4670069CCC5 /* ListViewController.swift */; };
+		B22BEC331E12A4D30069CCC5 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22BEC321E12A4D30069CCC5 /* ListViewModel.swift */; };
+		B22BEC361E12A6D20069CCC5 /* ListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22BEC351E12A6D20069CCC5 /* ListDataSource.swift */; };
+		B22BEC381E12ABB10069CCC5 /* UInt64.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22BEC371E12ABB10069CCC5 /* UInt64.swift */; };
+		B22BEC3A1E12C8DE0069CCC5 /* Decimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22BEC391E12C8DE0069CCC5 /* Decimal.swift */; };
+		B22BEC3D1E12CC6D0069CCC5 /* Spinnerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22BEC3C1E12CC6D0069CCC5 /* Spinnerable.swift */; };
+		B22BEC401E12CD2A0069CCC5 /* MindWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22BEC3F1E12CD2A0069CCC5 /* MindWebView.swift */; };
+		B22BEC421E12CDCE0069CCC5 /* MindImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22BEC411E12CDCE0069CCC5 /* MindImageView.swift */; };
+		B22BEC451E12D2D70069CCC5 /* MindImageLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22BEC441E12D2D70069CCC5 /* MindImageLinks.swift */; };
+		B23AC1C71E0849310012907C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B23AC1C61E0849310012907C /* Assets.xcassets */; };
+		B23AC1D51E0849320012907C /* cMind_InterviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23AC1D41E0849320012907C /* cMind_InterviewTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B23AC1D11E0849320012907C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B23AC1B41E0849310012907C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B23AC1BB1E0849310012907C;
+			remoteInfo = "cMind Interview";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B22BEC0A1E129C390069CCC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = UI/Storyboard/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B22BEC0C1E129C390069CCC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = UI/Storyboard/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B22BEC101E129C610069CCC5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Controller/AppDelegate.swift; sourceTree = "<group>"; };
+		B22BEC131E129D280069CCC5 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Controller/Main/MainViewController.swift; sourceTree = "<group>"; };
+		B22BEC181E129E160069CCC5 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewModel.swift; path = ViewModel/Main/MainViewModel.swift; sourceTree = "<group>"; };
+		B22BEC1B1E129ED10069CCC5 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewController.swift; path = Model/Extension/UIViewController.swift; sourceTree = "<group>"; };
+		B22BEC1D1E129EFF0069CCC5 /* UIScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIScrollView.swift; path = Model/Extension/UIScrollView.swift; sourceTree = "<group>"; };
+		B22BEC201E12A0000069CCC5 /* URLConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URLConstant.swift; path = Model/Constant/URLConstant.swift; sourceTree = "<group>"; };
+		B22BEC231E12A30A0069CCC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = UI/Storyboard/Base.lproj/List.storyboard; sourceTree = "<group>"; };
+		B22BEC271E12A3520069CCC5 /* ListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ListCell.xib; path = UI/Xib/List/ListCell.xib; sourceTree = "<group>"; };
+		B22BEC2B1E12A3DE0069CCC5 /* ListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListCell.swift; path = Controller/List/Cell/ListCell.swift; sourceTree = "<group>"; };
+		B22BEC2D1E12A43E0069CCC5 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = Model/Extension/UIView.swift; sourceTree = "<group>"; };
+		B22BEC2F1E12A4670069CCC5 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListViewController.swift; path = Controller/List/ListViewController.swift; sourceTree = "<group>"; };
+		B22BEC321E12A4D30069CCC5 /* ListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListViewModel.swift; path = ViewModel/List/ListViewModel.swift; sourceTree = "<group>"; };
+		B22BEC351E12A6D20069CCC5 /* ListDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListDataSource.swift; path = Controller/List/DataSource/ListDataSource.swift; sourceTree = "<group>"; };
+		B22BEC371E12ABB10069CCC5 /* UInt64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UInt64.swift; path = Model/Extension/UInt64.swift; sourceTree = "<group>"; };
+		B22BEC391E12C8DE0069CCC5 /* Decimal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Decimal.swift; path = Model/Extension/Decimal.swift; sourceTree = "<group>"; };
+		B22BEC3C1E12CC6D0069CCC5 /* Spinnerable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Spinnerable.swift; path = Controller/Spinner/Spinnerable.swift; sourceTree = "<group>"; };
+		B22BEC3F1E12CD2A0069CCC5 /* MindWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MindWebView.swift; path = Controller/Main/CustomView/MindWebView.swift; sourceTree = "<group>"; };
+		B22BEC411E12CDCE0069CCC5 /* MindImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MindImageView.swift; path = Controller/Main/CustomView/MindImageView.swift; sourceTree = "<group>"; };
+		B22BEC441E12D2D70069CCC5 /* MindImageLinks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MindImageLinks.swift; path = Model/Utils/MindImageLinks.swift; sourceTree = "<group>"; };
+		B23AC1BC1E0849310012907C /* cMind Interview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cMind Interview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B23AC1C61E0849310012907C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B23AC1CB1E0849310012907C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B23AC1D01E0849320012907C /* cMind InterviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cMind InterviewTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B23AC1D41E0849320012907C /* cMind_InterviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cMind_InterviewTests.swift; sourceTree = "<group>"; };
+		B23AC1D61E0849320012907C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B23AC1B91E0849310012907C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B23AC1CD1E0849320012907C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B22BEC071E129C200069CCC5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B22BEC251E12A3340069CCC5 /* Xib */,
+				B22BEC081E129C270069CCC5 /* Storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		B22BEC081E129C270069CCC5 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				B22BEC091E129C390069CCC5 /* LaunchScreen.storyboard */,
+				B22BEC0B1E129C390069CCC5 /* Main.storyboard */,
+				B22BEC221E12A30A0069CCC5 /* List.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		B22BEC0F1E129C4E0069CCC5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B22BEC3B1E12CC560069CCC5 /* Spinner */,
+				B22BEC291E12A3C60069CCC5 /* List */,
+				B22BEC121E129D120069CCC5 /* Main */,
+				B22BEC101E129C610069CCC5 /* AppDelegate.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B22BEC121E129D120069CCC5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B22BEC3E1E12CD010069CCC5 /* CustomView */,
+				B22BEC131E129D280069CCC5 /* MainViewController.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		B22BEC151E129DEE0069CCC5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B22BEC431E12D2BD0069CCC5 /* Utils */,
+				B22BEC1F1E129FD40069CCC5 /* Constant */,
+				B22BEC1A1E129EBC0069CCC5 /* Extension */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B22BEC161E129DF30069CCC5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B22BEC311E12A4C00069CCC5 /* List */,
+				B22BEC171E129E040069CCC5 /* Main */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		B22BEC171E129E040069CCC5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B22BEC181E129E160069CCC5 /* MainViewModel.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		B22BEC1A1E129EBC0069CCC5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B22BEC1B1E129ED10069CCC5 /* UIViewController.swift */,
+				B22BEC1D1E129EFF0069CCC5 /* UIScrollView.swift */,
+				B22BEC2D1E12A43E0069CCC5 /* UIView.swift */,
+				B22BEC371E12ABB10069CCC5 /* UInt64.swift */,
+				B22BEC391E12C8DE0069CCC5 /* Decimal.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		B22BEC1F1E129FD40069CCC5 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				B22BEC201E12A0000069CCC5 /* URLConstant.swift */,
+			);
+			name = Constant;
+			sourceTree = "<group>";
+		};
+		B22BEC251E12A3340069CCC5 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				B22BEC261E12A33B0069CCC5 /* List */,
+			);
+			name = Xib;
+			sourceTree = "<group>";
+		};
+		B22BEC261E12A33B0069CCC5 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				B22BEC271E12A3520069CCC5 /* ListCell.xib */,
+			);
+			name = List;
+			sourceTree = "<group>";
+		};
+		B22BEC291E12A3C60069CCC5 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				B22BEC341E12A6B60069CCC5 /* DataSource */,
+				B22BEC2A1E12A3CA0069CCC5 /* Cell */,
+				B22BEC2F1E12A4670069CCC5 /* ListViewController.swift */,
+			);
+			name = List;
+			sourceTree = "<group>";
+		};
+		B22BEC2A1E12A3CA0069CCC5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B22BEC2B1E12A3DE0069CCC5 /* ListCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		B22BEC311E12A4C00069CCC5 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				B22BEC321E12A4D30069CCC5 /* ListViewModel.swift */,
+			);
+			name = List;
+			sourceTree = "<group>";
+		};
+		B22BEC341E12A6B60069CCC5 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				B22BEC351E12A6D20069CCC5 /* ListDataSource.swift */,
+			);
+			name = DataSource;
+			sourceTree = "<group>";
+		};
+		B22BEC3B1E12CC560069CCC5 /* Spinner */ = {
+			isa = PBXGroup;
+			children = (
+				B22BEC3C1E12CC6D0069CCC5 /* Spinnerable.swift */,
+			);
+			name = Spinner;
+			sourceTree = "<group>";
+		};
+		B22BEC3E1E12CD010069CCC5 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				B22BEC3F1E12CD2A0069CCC5 /* MindWebView.swift */,
+				B22BEC411E12CDCE0069CCC5 /* MindImageView.swift */,
+			);
+			name = CustomView;
+			sourceTree = "<group>";
+		};
+		B22BEC431E12D2BD0069CCC5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B22BEC441E12D2D70069CCC5 /* MindImageLinks.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		B23AC1B31E0849310012907C = {
+			isa = PBXGroup;
+			children = (
+				B23AC1BE1E0849310012907C /* cMind Interview */,
+				B23AC1D31E0849320012907C /* cMind InterviewTests */,
+				B23AC1BD1E0849310012907C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B23AC1BD1E0849310012907C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B23AC1BC1E0849310012907C /* cMind Interview.app */,
+				B23AC1D01E0849320012907C /* cMind InterviewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B23AC1BE1E0849310012907C /* cMind Interview */ = {
+			isa = PBXGroup;
+			children = (
+				B22BEC161E129DF30069CCC5 /* ViewModel */,
+				B22BEC151E129DEE0069CCC5 /* Model */,
+				B22BEC0F1E129C4E0069CCC5 /* Controller */,
+				B22BEC071E129C200069CCC5 /* UI */,
+				B23AC1C61E0849310012907C /* Assets.xcassets */,
+				B23AC1CB1E0849310012907C /* Info.plist */,
+			);
+			path = "cMind Interview";
+			sourceTree = "<group>";
+		};
+		B23AC1D31E0849320012907C /* cMind InterviewTests */ = {
+			isa = PBXGroup;
+			children = (
+				B23AC1D41E0849320012907C /* cMind_InterviewTests.swift */,
+				B23AC1D61E0849320012907C /* Info.plist */,
+			);
+			path = "cMind InterviewTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B23AC1BB1E0849310012907C /* cMind Interview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B23AC1D91E0849320012907C /* Build configuration list for PBXNativeTarget "cMind Interview" */;
+			buildPhases = (
+				B23AC1B81E0849310012907C /* Sources */,
+				B23AC1B91E0849310012907C /* Frameworks */,
+				B23AC1BA1E0849310012907C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "cMind Interview";
+			productName = "cMind Interview";
+			productReference = B23AC1BC1E0849310012907C /* cMind Interview.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B23AC1CF1E0849320012907C /* cMind InterviewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B23AC1DC1E0849320012907C /* Build configuration list for PBXNativeTarget "cMind InterviewTests" */;
+			buildPhases = (
+				B23AC1CC1E0849320012907C /* Sources */,
+				B23AC1CD1E0849320012907C /* Frameworks */,
+				B23AC1CE1E0849320012907C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B23AC1D21E0849320012907C /* PBXTargetDependency */,
+			);
+			name = "cMind InterviewTests";
+			productName = "cMind InterviewTests";
+			productReference = B23AC1D01E0849320012907C /* cMind InterviewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B23AC1B41E0849310012907C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = cMind;
+				TargetAttributes = {
+					B23AC1BB1E0849310012907C = {
+						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+					B23AC1CF1E0849320012907C = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B23AC1BB1E0849310012907C;
+					};
+				};
+			};
+			buildConfigurationList = B23AC1B71E0849310012907C /* Build configuration list for PBXProject "cMind Interview" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B23AC1B31E0849310012907C;
+			productRefGroup = B23AC1BD1E0849310012907C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B23AC1BB1E0849310012907C /* cMind Interview */,
+				B23AC1CF1E0849320012907C /* cMind InterviewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B23AC1BA1E0849310012907C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B22BEC0E1E129C390069CCC5 /* Main.storyboard in Resources */,
+				B23AC1C71E0849310012907C /* Assets.xcassets in Resources */,
+				B22BEC241E12A30A0069CCC5 /* List.storyboard in Resources */,
+				B22BEC0D1E129C390069CCC5 /* LaunchScreen.storyboard in Resources */,
+				B22BEC281E12A3520069CCC5 /* ListCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B23AC1CE1E0849320012907C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B23AC1B81E0849310012907C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B22BEC331E12A4D30069CCC5 /* ListViewModel.swift in Sources */,
+				B22BEC2E1E12A43E0069CCC5 /* UIView.swift in Sources */,
+				B22BEC1E1E129EFF0069CCC5 /* UIScrollView.swift in Sources */,
+				B22BEC361E12A6D20069CCC5 /* ListDataSource.swift in Sources */,
+				B22BEC421E12CDCE0069CCC5 /* MindImageView.swift in Sources */,
+				B22BEC451E12D2D70069CCC5 /* MindImageLinks.swift in Sources */,
+				B22BEC111E129C610069CCC5 /* AppDelegate.swift in Sources */,
+				B22BEC3A1E12C8DE0069CCC5 /* Decimal.swift in Sources */,
+				B22BEC141E129D280069CCC5 /* MainViewController.swift in Sources */,
+				B22BEC3D1E12CC6D0069CCC5 /* Spinnerable.swift in Sources */,
+				B22BEC2C1E12A3DE0069CCC5 /* ListCell.swift in Sources */,
+				B22BEC301E12A4670069CCC5 /* ListViewController.swift in Sources */,
+				B22BEC401E12CD2A0069CCC5 /* MindWebView.swift in Sources */,
+				B22BEC1C1E129ED10069CCC5 /* UIViewController.swift in Sources */,
+				B22BEC381E12ABB10069CCC5 /* UInt64.swift in Sources */,
+				B22BEC191E129E160069CCC5 /* MainViewModel.swift in Sources */,
+				B22BEC211E12A0000069CCC5 /* URLConstant.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B23AC1CC1E0849320012907C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B23AC1D51E0849320012907C /* cMind_InterviewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B23AC1D21E0849320012907C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B23AC1BB1E0849310012907C /* cMind Interview */;
+			targetProxy = B23AC1D11E0849320012907C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B22BEC091E129C390069CCC5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B22BEC0A1E129C390069CCC5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B22BEC0B1E129C390069CCC5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B22BEC0C1E129C390069CCC5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B22BEC221E12A30A0069CCC5 /* List.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B22BEC231E12A30A0069CCC5 /* Base */,
+			);
+			name = List.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B23AC1D71E0849320012907C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B23AC1D81E0849320012907C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B23AC1DA1E0849320012907C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "cMind Interview/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cMind.cMind-Interview";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B23AC1DB1E0849320012907C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "cMind Interview/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cMind.cMind-Interview";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B23AC1DD1E0849320012907C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "cMind InterviewTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cMind.cMind-InterviewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cMind Interview.app/cMind Interview";
+			};
+			name = Debug;
+		};
+		B23AC1DE1E0849320012907C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "cMind InterviewTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cMind.cMind-InterviewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cMind Interview.app/cMind Interview";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B23AC1B71E0849310012907C /* Build configuration list for PBXProject "cMind Interview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B23AC1D71E0849320012907C /* Debug */,
+				B23AC1D81E0849320012907C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B23AC1D91E0849320012907C /* Build configuration list for PBXNativeTarget "cMind Interview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B23AC1DA1E0849320012907C /* Debug */,
+				B23AC1DB1E0849320012907C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B23AC1DC1E0849320012907C /* Build configuration list for PBXNativeTarget "cMind InterviewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B23AC1DD1E0849320012907C /* Debug */,
+				B23AC1DE1E0849320012907C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B23AC1B41E0849310012907C /* Project object */;
+}
