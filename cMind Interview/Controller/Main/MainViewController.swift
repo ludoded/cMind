@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 final class MainViewController: UIViewController {
     let viewModel = MainViewModel()
@@ -18,8 +19,15 @@ final class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        startNotifyingReachability()
+        setupScroller()
         setupImageViewTap()
         setupWebView()
+    }
+    
+    private func setupScroller() {
+        registerForKeyboardDidShowNotification(scrollView)
+        registerForKeyboardWillHideNotification(scrollView)
     }
     
     private func setupImageViewTap() {
@@ -33,8 +41,14 @@ final class MainViewController: UIViewController {
     }
     
     private func toggleImage() {
-        imageBox.startSpinning()
-        imageBox.isUserInteractionEnabled = false
+        guard let resource = viewModel.randomImageResource() else { return }
+        
+        imageBox.startLoading()
+        imageBox.imageView.kf.setImage(with: resource, placeholder: nil, options: nil, progressBlock: nil, completionHandler: { [weak self] image, error, _, _ in
+            self?.imageBox.stopLoading()
+            guard error == nil else { self?.showError(errorText: error?.localizedDescription ?? ""); return }
+            self?.imageBox.imageView.image = image
+        })
     }
     
     @objc private func tapImage(_: UITapGestureRecognizer) {
@@ -55,8 +69,7 @@ extension MainViewController: UIWebViewDelegate {
     
     func webView(_ webView: UIWebView, didFailLoadWithError error: Error) {
         webBox.stopSpinning()
-        let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
-        alert.show(self, sender: nil)
+        showError(errorText: error.localizedDescription)
     }
     
     func webViewDidFinishLoad(_ webView: UIWebView) {

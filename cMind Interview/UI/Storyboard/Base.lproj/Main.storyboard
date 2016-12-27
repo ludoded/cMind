@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -25,13 +26,13 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SLJ-Sa-Gya">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="647"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nin-hX-u8V" customClass="MindWebView" customModule="cMind_Interview" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="318.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="318.5"/>
                                                 <subviews>
                                                     <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sb7-EP-PDJ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="318.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="318.5"/>
                                                         <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <connections>
                                                             <outlet property="delegate" destination="BYZ-38-t0r" id="7za-6P-iSF"/>
@@ -39,6 +40,7 @@
                                                     </webView>
                                                     <activityIndicatorView opaque="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="7Zs-35-oUr">
                                                         <rect key="frame" x="168.5" y="141" width="37" height="37"/>
+                                                        <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     </activityIndicatorView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -56,10 +58,11 @@
                                                 </connections>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yKb-b3-Vz4" customClass="MindImageView" customModule="cMind_Interview" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="328.5" width="374" height="318.5"/>
+                                                <rect key="frame" x="0.0" y="328.5" width="375" height="318.5"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3BJ-Ob-zBH">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="318.5"/>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3BJ-Ob-zBH">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="318.5"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                     </imageView>
                                                     <activityIndicatorView opaque="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="NMt-so-lr6">
                                                         <rect key="frame" x="169" y="140.5" width="37" height="37"/>
@@ -84,10 +87,10 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="SLJ-Sa-Gya" firstAttribute="top" secondItem="LTS-dX-p3I" secondAttribute="top" id="Rta-aR-7Eb"/>
-                                    <constraint firstItem="SLJ-Sa-Gya" firstAttribute="centerY" secondItem="LTS-dX-p3I" secondAttribute="centerY" id="Voa-sQ-J08"/>
                                     <constraint firstAttribute="trailing" secondItem="SLJ-Sa-Gya" secondAttribute="trailing" id="aRU-3Q-j1t"/>
-                                    <constraint firstItem="SLJ-Sa-Gya" firstAttribute="centerX" secondItem="LTS-dX-p3I" secondAttribute="centerX" id="ott-xm-QWa"/>
-                                    <constraint firstAttribute="bottom" secondItem="SLJ-Sa-Gya" secondAttribute="bottom" id="sLD-s4-eOS"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="SLJ-Sa-Gya" secondAttribute="bottom" id="kq3-Y3-suq"/>
+                                    <constraint firstItem="SLJ-Sa-Gya" firstAttribute="width" secondItem="LTS-dX-p3I" secondAttribute="width" id="nET-R9-5dh"/>
+                                    <constraint firstItem="SLJ-Sa-Gya" firstAttribute="height" secondItem="LTS-dX-p3I" secondAttribute="height" id="oK4-PH-b6a"/>
                                     <constraint firstItem="SLJ-Sa-Gya" firstAttribute="leading" secondItem="LTS-dX-p3I" secondAttribute="leading" id="yzN-jm-kKM"/>
                                 </constraints>
                             </scrollView>

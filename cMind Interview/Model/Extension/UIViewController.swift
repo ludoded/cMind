@@ -42,3 +42,27 @@ extension UIViewController {
         })
     }
 }
+
+/// MARK: Reachability
+extension UIViewController {
+    func startNotifyingReachability() {
+        let reachability = Reachability()!
+        
+        reachability.whenUnreachable = { [weak self] _ in
+            DispatchQueue.main.async {
+                self?.showError(errorText: "Check your connectivity!")
+            }
+        }
+        
+        try? reachability.startNotifier()
+    }
+}
+
+/// MARK: Error handling
+extension UIViewController {
+    func showError(errorText: String) {
+        let alert = UIAlertController(title: "Error", message: errorText, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
+}

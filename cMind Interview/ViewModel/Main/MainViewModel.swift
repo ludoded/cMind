@@ -7,13 +7,18 @@
 //
 
 import Foundation
+import Kingfisher
 
 final class MainViewModel {
     let googleRequest = URLRequest(url: URL(string: GoogleURL)!) // Force cast here is 100% successful.
     let links = MindImageLinks()
     
-    func randomImage() {
+    func randomImageResource() -> ImageResource? {
+        let link = links.randomLink()
+        guard let url = URL(string: link) else { return nil }
+        let resource = ImageResource(downloadURL: url)
         
+        return resource
     }
     
     func validate(request: URLRequest) -> Bool {

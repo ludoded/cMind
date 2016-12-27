@@ -11,4 +11,14 @@ import UIKit
 final class MindImageView: UIView, Spinnerable {
     @IBOutlet weak internal var spinner: UIActivityIndicatorView!
     @IBOutlet weak var imageView: UIImageView!
+    
+    func startLoading() {
+        isUserInteractionEnabled = false
+        startSpinning()
+    }
+    
+    func stopLoading() {
+        isUserInteractionEnabled = true
+        stopSpinning()
+    }
 }

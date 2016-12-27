@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "065A3934B6D31CD49BA8070D45F2399EFBBCFA65",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "065A3934B6D31CD49BA8070D45F2399EFBBCFA65" : 9223372036854775807,
+    "17FB51EC7B87DC25DD21E28FDFD877B479CFFAC1" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4BE258A5-17D9-454B-9081-4807A8AD3AA1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "065A3934B6D31CD49BA8070D45F2399EFBBCFA65" : "cMind%20Interview\/",
+    "17FB51EC7B87DC25DD21E28FDFD877B479CFFAC1" : "cMind%20Interview\/Kingfisher\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "cMind Interview",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "cMind Interview.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ludoded\/cMind",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "065A3934B6D31CD49BA8070D45F2399EFBBCFA65"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/onevcat\/Kingfisher.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "17FB51EC7B87DC25DD21E28FDFD877B479CFFAC1"
+    }
+  ]
+}
